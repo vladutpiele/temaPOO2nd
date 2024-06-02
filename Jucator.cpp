@@ -12,6 +12,7 @@ Jucator::Jucator(std::string _nume, int _varsta, std::string _pozitieJoc, int _p
 }
 
 void Jucator::afiseazaDetalii() {
+    std::cout << "varsta jucatorului este de " << varsta << " ani" << '\n';
     std::cout << "pace : " << pace << '\n';
     std::cout << "shooting : " << shooting << '\n';
     std::cout << "passing : " << passing << '\n';
