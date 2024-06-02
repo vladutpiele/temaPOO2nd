@@ -15,7 +15,7 @@ private:
     int ratingDegajare;
 public:
 
-    Portar([[maybe_unused]] std::string nume, int varsta, [[maybe_unused]] std::string pozitieJoc, int pace, int shooting, int passing, int dribbling, int defending, int physical, bool accidentat, int _ratingReflex, int _ratingDegajare);
+    Portar(std::string nume, int varsta, std::string pozitieJoc, int pace, int shooting, int passing, int dribbling, int defending, int physical, bool accidentat, int _ratingReflex, int _ratingDegajare);
 
     [[nodiscard]] Jucator* clone() const override;
 

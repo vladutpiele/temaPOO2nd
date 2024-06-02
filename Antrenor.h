@@ -16,7 +16,7 @@ private:
     std::vector<Jucator*> jucatori;
 public:
 
-    [[maybe_unused]] Antrenor(std::string _nume, std::vector<Jucator*> _jucatori);
+    Antrenor(std::string _nume, std::vector<Jucator*> _jucatori);
 
     Antrenor() = default;
 

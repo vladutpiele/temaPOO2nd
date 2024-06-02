@@ -12,8 +12,8 @@
 class Jucator {
 private:
     std::string nume;
-    [[maybe_unused]] int varsta;
-    [[maybe_unused]] std::string pozitieJoc;
+    int varsta;
+    std::string pozitieJoc;
 protected:
     int pace, shooting, passing, dribbling, defending, physical;
     bool accidentat;

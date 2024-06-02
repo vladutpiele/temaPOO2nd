@@ -14,7 +14,7 @@
 class Fundas : public Jucator {
 public:
 
-    Fundas([[maybe_unused]] [[maybe_unused]] std::string nume, int varsta, [[maybe_unused]] [[maybe_unused]] std::string pozitieJoc, int pace, int shooting, int passing, int dribbling, int defending, int physical, bool accidentat);
+    Fundas(std::string nume, int varsta, std::string pozitieJoc, int pace, int shooting, int passing, int dribbling, int defending, int physical, bool accidentat);
 
     [[nodiscard]] Jucator* clone() const override;
 

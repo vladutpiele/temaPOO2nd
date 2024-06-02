@@ -15,7 +15,7 @@
 class Mijlocas : public Jucator {
 public:
 
-    Mijlocas([[maybe_unused]] [[maybe_unused]] std::string nume, int varsta, [[maybe_unused]] [[maybe_unused]] std::string pozitieJoc, int pace, int shooting, int passing, int dribbling, int defending, int physical, bool accidentat);
+    Mijlocas(std::string nume, int varsta, std::string pozitieJoc, int pace, int shooting, int passing, int dribbling, int defending, int physical, bool accidentat);
 
     [[nodiscard]] Jucator* clone() const override;
 
