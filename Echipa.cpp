@@ -19,8 +19,8 @@ Echipa::Echipa(const Echipa &other) {
     nume = other.nume;
     puncte = other.puncte;
     antrenor = other.antrenor;
-    for(auto it : jucatori){
-        it->clone();
+    for(auto it : other.jucatori){
+        jucatori.push_back(it->clone());
     }
 }
 
