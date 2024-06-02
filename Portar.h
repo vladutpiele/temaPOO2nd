@@ -22,6 +22,8 @@ public:
     void antreneaza() override;
 
     void afiseazaDetalii() override;
+
+    ~Portar() override = default;
 };
 
 #endif //OOP_PORTAR_H

@@ -21,6 +21,8 @@ public:
     void antreneaza() override;
 
     void afiseazaDetalii() override;
+
+    ~Fundas() override = default;
 };
 
 

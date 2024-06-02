@@ -22,6 +22,8 @@ public:
     void antreneaza() override;
 
     void afiseazaDetalii() override;
+
+    ~Mijlocas() override = default;
 };
 
 #endif //OOP_MIJLOCAS_H

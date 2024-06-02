@@ -25,6 +25,8 @@ public:
     void antreneaza() override;
 
     void afiseazaDetalii() override;
+
+    ~Atacant() override = default;
 };
 
 
