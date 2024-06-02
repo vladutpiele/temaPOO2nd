@@ -28,7 +28,7 @@ public:
 
     Antrenor& operator=(Antrenor other);
 
-    ~Antrenor();
+    virtual ~Antrenor();
 };
 
 #endif //OOP_ANTRENOR_H
