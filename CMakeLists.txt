@@ -114,8 +114,6 @@ endfunction()
 # NOTE: update executable name in .github/workflows/cmake.yml:25 when changing name here
 add_executable(${PROJECT_NAME} main.cpp
         generated/src/Helper.cpp
-        Radu.cpp
-        Radu.h
         Antrenor.cpp
         Antrenor.h
         Atacant.cpp
