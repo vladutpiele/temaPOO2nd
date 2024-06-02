@@ -29,7 +29,7 @@ public:
 
     [[nodiscard]] virtual Jucator* clone() const;
 
-    [[maybe_unused]] virtual void antreneaza(int valoare);
+    [[maybe_unused]] virtual void antreneaza();
 
     virtual void afiseazaDetalii();
 

@@ -34,7 +34,7 @@ void Jucator::revineDupaAccidentare() {
     accidentat = false;
 }
 
-void Jucator::antreneaza(int valoare) {}
+void Jucator::antreneaza() {}
 
 Jucator *Jucator::clone() const {
     return new Jucator(*this);
