@@ -11,8 +11,7 @@ Antrenor *Antrenor::clone() const {
     return new Antrenor(*this);
 }
 
-Antrenor::Antrenor(const Antrenor &other) {
-    nume = other.nume;
+Antrenor::Antrenor(const Antrenor &other) : nume(other.nume) {
     for(auto it : other.jucatori){
         jucatori.push_back(it->clone());
     }

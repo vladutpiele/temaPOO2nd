@@ -15,10 +15,7 @@ Echipa *Echipa::clone() {
     return new Echipa(*this);
 }
 
-Echipa::Echipa(const Echipa &other) {
-    nume = other.nume;
-    puncte = other.puncte;
-    antrenor = other.antrenor;
+Echipa::Echipa(const Echipa &other) : nume(other.nume), puncte(other.puncte), antrenor(other.antrenor) {
     for(auto it : other.jucatori){
         jucatori.push_back(it->clone());
     }
