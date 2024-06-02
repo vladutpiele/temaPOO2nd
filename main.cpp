@@ -78,6 +78,9 @@ int main(){
             Antrenor antrenor(numeAntrenor, jucatori);
             std::string numeEchipa = "Echipa";
             Echipa echipa(numeEchipa, 0, antrenor, jucatori);
+            for(auto it : jucatori){
+                delete it;
+            }
             teams.push_back(echipa);
             delete portar1;
             delete portar2;
