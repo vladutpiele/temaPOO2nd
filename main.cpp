@@ -19,7 +19,7 @@ int main(){
             /// voi crea 10 echipe in campionat
             Jucator* portar1 = new Portar("Portar1", 27, "portar", 30, 40, 22, 38, 55, 80, false, 97, 95);
             portar1->antreneaza();
-            //portar1->seAccidenteaza();
+            portar1->seAccidenteaza();
             portar1->antreneaza();
             Jucator* portar2 = new Portar("Portar2", 25, "portar", 36, 33, 29, 48, 45, 77, false, 91, 96);
             Jucator* fundas1 = new Fundas("Fundas1", 33, "fundas", 80, 88, 83, 77, 69, 66, false);
@@ -27,7 +27,7 @@ int main(){
 
             fundas2->antreneaza();
             fundas2->antreneaza();
-            //fundas2->seAccidenteaza();
+            fundas2->seAccidenteaza();
             fundas2->antreneaza();
 
 
@@ -49,13 +49,13 @@ int main(){
             Jucator* mijlocas4 = new Mijlocas("Mijlocas1", 22, "mijlocas", 88, 82, 80, 90, 93, 91, false);
 
             Jucator* atacant1 = new Atacant("Atacant1", 22, "atacant", 91, 90, 88, 86, 81, 83, false);
-            //atacant1->antreneaza();
-            //atacant1->revineDupaAccidentare();
+            atacant1->antreneaza();
+            atacant1->revineDupaAccidentare();
             atacant1->antreneaza();
             atacant1->antreneaza();
 
             Jucator* atacant2 = new Atacant("Atacant2", 29, "atacant", 99, 96, 92, 88, 74, 88, false);
-            //atacant2->revineDupaAccidentare();
+            atacant2->revineDupaAccidentare();
             atacant2->antreneaza();
             atacant2->afiseazaDetalii();
 
