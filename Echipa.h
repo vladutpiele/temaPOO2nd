@@ -39,7 +39,7 @@ public:
 
     void joacaMeci(Echipa other);
 
-    ~Echipa();
+    virtual ~ Echipa();
 };
 
 #endif //OOP_ECHIPA_H

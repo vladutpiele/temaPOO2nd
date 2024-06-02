@@ -64,7 +64,7 @@ void Echipa::joacaMeci(Echipa other) {
 
 }
 
-Echipa::~Echipa() {
+Echipa:: ~Echipa() {
     for(auto it : jucatori) {
         delete it;
     }

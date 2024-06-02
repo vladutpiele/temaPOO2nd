@@ -15,9 +15,10 @@ int getRandVal(){
     return 70 + rand() % 30;
 }
 
+std::vector<Echipa> teams;
+
 int main(){
     try {
-        std::vector<Echipa> echipe;
         for(int i = 0; i < 10; i ++) {
             /// voi crea 10 echipe in campionat
             Jucator* portar1 = new Portar("Portar1", 27, "portar", 30, 40, 22, 38, 55, 80, false, 97, 95);
@@ -81,7 +82,7 @@ int main(){
             Antrenor antrenor(numeAntrenor, jucatori);
             std::string numeEchipa = "Echipa";
             Echipa echipa(numeEchipa, 0, antrenor, jucatori);
-            echipe.push_back(echipa);
+            teams.push_back(echipa);
             delete portar1;
             delete portar2;
             delete fundas1;
@@ -97,7 +98,7 @@ int main(){
             delete atacant2;
             delete atacant3;
         }
-        Campionat ligaRomaniei(echipe);
+        Campionat ligaRomaniei(teams);
         std::cout << "In campionat sunt " << Campionat::numarEchipe() << " echipe si " << Campionat::numarJucatori() << " jucatori" << '\n';
         Campionat::joacaCampionat();
     } catch(AntrenamentIndisponibil& err) {
