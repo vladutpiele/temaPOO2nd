@@ -18,12 +18,12 @@ Jucator *Portar::clone() const {
     return new Portar(*this);
 }
 
-void Portar::antreneaza(int valoare) {
+void Portar::antreneaza() {
     if(accidentat) {
         throw AntrenamentIndisponibil("Jucatorul nu poate fi antrenat pentru ca este accidentat");
     }
-    ratingDegajare += valoare;
-    ratingReflex += valoare;
+    ratingDegajare ++;
+    ratingReflex ++;
 }
 
 void Portar::afiseazaDetalii() {

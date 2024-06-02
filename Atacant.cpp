@@ -11,12 +11,12 @@ Jucator *Atacant::clone() const {
     return new Atacant(*this);
 }
 
-void Atacant::antreneaza(int valoare) {
+void Atacant::antreneaza() {
     if(accidentat) {
         throw AntrenamentIndisponibil("Jucatorul nu poate fi antrenat pentru ca este accidentat");
     }
-    shooting += valoare;
-    dribbling += valoare;
+    shooting ++;
+    dribbling ++;
 }
 
 void Atacant::afiseazaDetalii() {

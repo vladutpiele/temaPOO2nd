@@ -13,12 +13,12 @@ Jucator *Fundas::clone() const {
     return new Fundas(*this);
 }
 
-void Fundas::antreneaza(int valoare) {
+void Fundas::antreneaza() {
     if(accidentat) {
         throw AntrenamentIndisponibil("Jucatorul nu poate fi antrenat pentru ca este accidentat");
     }
-    defending += valoare;
-    physical += valoare;
+    defending ++;
+    physical ++;
 }
 
 void Fundas::afiseazaDetalii() {

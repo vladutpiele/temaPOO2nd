@@ -11,13 +11,13 @@ Jucator *Mijlocas::clone() const {
     return new Mijlocas(*this);
 }
 
-void Mijlocas::antreneaza(int valoare) {
+void Mijlocas::antreneaza() {
     if(accidentat) {
         throw AntrenamentIndisponibil("Jucatorul nu poate fi antrenat pentru ca este accidentat");
     }
-    passing += valoare;
-    defending += valoare;
-    dribbling += valoare;
+    passing ++;
+    defending ++;
+    dribbling ++;
 }
 
 void Mijlocas::afiseazaDetalii() {

@@ -22,7 +22,7 @@ public:
 
     Atacant& operator=(const Atacant& other) = default;
 
-    void antreneaza(int valoare) override;
+    void antreneaza() override;
 
     void afiseazaDetalii() override;
 };

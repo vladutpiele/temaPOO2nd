@@ -19,7 +19,7 @@ public:
 
     [[nodiscard]] Jucator* clone() const override;
 
-    void antreneaza(int valoare) override;
+    void antreneaza() override;
 
     void afiseazaDetalii() override;
 };
