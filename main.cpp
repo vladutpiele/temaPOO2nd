@@ -34,6 +34,8 @@ int main(){
             memoryLeak.push_back(fundas5);
             fundas5->afiseazaDetalii();
 
+            fundas3->seAccidenteaza();
+
 
             Jucator* mijlocas1 = new Mijlocas("Mijlocas1", 31, "mijlocas", 90, 88, 81, 86, 79, 77, false);
             memoryLeak.push_back(mijlocas1);
@@ -49,6 +51,7 @@ int main(){
             memoryLeak.push_back(mijlocas4);
             Jucator* atacant1 = new Atacant("Atacant1", 22, "atacant", 91, 90, 88, 86, 81, 83, true);
             memoryLeak.push_back(atacant1);
+            atacant1->revineDupaAccidentare();
 
             Jucator* atacant2 = new Atacant("Atacant2", 29, "atacant", 99, 96, 92, 88, 74, 88, true);
             memoryLeak.push_back(atacant2);
