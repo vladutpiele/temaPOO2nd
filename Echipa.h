@@ -22,7 +22,6 @@ public:
 
     Echipa(std::string _nume, int _puncte, const Antrenor& _antrenor, std::vector<Jucator*> _jucatori);
 
-    virtual Echipa* clone();
 
     Echipa(const Echipa& other);
 
@@ -32,6 +31,7 @@ public:
 
     [[nodiscard]] std::string getNume() const;
 
+    void antreneazaEchipa();
 
     [[nodiscard]] int getNrPuncte() const;
 
@@ -39,7 +39,7 @@ public:
 
     void joacaMeci(Echipa other);
 
-    virtual ~ Echipa();
+    ~ Echipa();
 };
 
 #endif //OOP_ECHIPA_H

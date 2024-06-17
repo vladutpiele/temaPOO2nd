@@ -21,7 +21,16 @@ void Jucator::afiseazaDetalii() {
     std::cout << "physical : " << physical << '\n';
 }
 
-void Jucator::seAccidenteaza() {
+void Jucator::antrenamentJucator() {
+    pace++;
+    shooting++;
+    passing++;
+    dribbling++;
+    defending++;
+    physical++;
+}
+
+[[maybe_unused]] void Jucator::seAccidenteaza() {
     accidentat = true;
 }
 
@@ -31,11 +40,16 @@ int Jucator::totalRating() const {
     return 0;
 }
 
-void Jucator::revineDupaAccidentare() {
+[[maybe_unused]] void Jucator::revineDupaAccidentare() {
     accidentat = false;
 }
 
-void Jucator::antreneaza() {}
+void Jucator::antreneaza() {
+    if(accidentat) {
+        throw AntrenamentIndisponibil("Jucatorul nu poate fi antrenat pentru ca este accidentat");
+    }
+    antrenamentJucator();
+}
 
 Jucator *Jucator::clone() const {
     return new Jucator(*this);

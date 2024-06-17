@@ -11,10 +11,6 @@ Echipa::Echipa(std::string _nume, int _puncte, const Antrenor &_antrenor, std::v
     Campionat::adaugaEchipa();
 }
 
-Echipa *Echipa::clone() {
-    return new Echipa(*this);
-}
-
 Echipa::Echipa(const Echipa &other) : nume(other.nume), puncte(other.puncte), antrenor(other.antrenor) {
     for(auto it : other.jucatori){
         jucatori.push_back(it->clone());
@@ -30,6 +26,12 @@ void swap(Echipa& echipa1, Echipa& echipa2) {
 Echipa &Echipa::operator=(Echipa other) {
     swap(*this, other);
     return *this;
+}
+
+void Echipa::antreneazaEchipa() {
+    for(auto it : jucatori){
+        it->antreneaza();
+    }
 }
 
 std::string Echipa::getNume() const {

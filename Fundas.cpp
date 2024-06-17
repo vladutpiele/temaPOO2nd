@@ -3,6 +3,7 @@
 //
 
 
+#include <valarray>
 #include "Fundas.h"
 
 
@@ -13,12 +14,9 @@ Jucator *Fundas::clone() const {
     return new Fundas(*this);
 }
 
-void Fundas::antreneaza() {
-    if(accidentat) {
-        throw AntrenamentIndisponibil("Jucatorul nu poate fi antrenat pentru ca este accidentat");
-    }
-    defending ++;
-    physical ++;
+void Fundas::antrenamentJucator() {
+    defending += defending % 10 + physical % 7;
+    physical += (int)(sqrt((int)sqrt(physical)));
 }
 
 void Fundas::afiseazaDetalii() {

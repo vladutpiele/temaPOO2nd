@@ -14,6 +14,7 @@ private:
     std::string nume;
     int varsta;
     std::string pozitieJoc;
+    virtual void antrenamentJucator();
 protected:
     int pace, shooting, passing, dribbling, defending, physical;
     bool accidentat;
@@ -29,13 +30,13 @@ public:
 
     [[nodiscard]] virtual Jucator* clone() const;
 
-    [[maybe_unused]] virtual void antreneaza();
+    void antreneaza();
 
     virtual void afiseazaDetalii();
 
-    void seAccidenteaza();
+    [[maybe_unused]] void seAccidenteaza();
 
-    void revineDupaAccidentare();
+    [[maybe_unused]] void revineDupaAccidentare();
 
     [[nodiscard]] int totalRating() const;
 
