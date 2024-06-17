@@ -1,4 +1,6 @@
-# Nu primesc notă pentru că nu am pus titlu și descriere
+# Tema a 2-a vine cu o simulare a unui campionat de fotbal
+
+In a 2-a tema la Programare Orientata pe Obiecte, am realizat simularea unui campionat de fotbal, care include o ierarhie proprie de exceptii, dar si cate o entitate pentru fiecare echipa, antrenor, jucator de pe teren si campionatul in care se desfasoara meciurile.
 
 ### Important!
 Aveți voie cu cod generat de modele de limbaj la care nu ați contribuit semnificativ doar în folder-ul `generated`.
